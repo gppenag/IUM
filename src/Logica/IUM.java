@@ -10,14 +10,22 @@ package Logica;
  * @author Estudiante
  */
 public class IUM {
+
     private Ciudad[] ciudades;
 
     public IUM(Ciudad[] ciudades) {
         this.ciudades = ciudades;
     }
-      
-    public void registro(){
-        
-    }
+
+    public String registro() {
+        String inf = " ";
+        for (Ciudad c : ciudades) {
+            for (int i = 0; i < c.getEstaciones().length; i++) {
+                
+            }
+        }
+     return inf;
+}  
+
 
 }

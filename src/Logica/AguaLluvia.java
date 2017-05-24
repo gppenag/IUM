@@ -10,7 +10,8 @@ package Logica;
  * @author Estudiante
  */
 public class AguaLluvia extends Sensores {
-
+private int canAgua;
+    
     public AguaLluvia(String marca, String referencia, String fechaInst) {
         super(marca, referencia, fechaInst);
     }

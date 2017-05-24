@@ -5,6 +5,8 @@
  */
 package Logica;
 
+import Excepciones.EstacionExcepcion;
+
 /**
  *
  * @author Estudiante
@@ -13,8 +15,11 @@ public class Ciudad {
     protected String nombre;
     private EstMet[] estaciones;
     
-    public Ciudad(EstMet[] estaciones, String nombre){
+    public Ciudad(EstMet[] estaciones, String nombre) throws EstacionExcepcion{
         this.nombre = nombre;
+        if(estaciones.length<3){
+            throw new EstacionExcepcion();
+        }
         this.estaciones = estaciones;
     }
 

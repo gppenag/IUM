@@ -10,13 +10,15 @@ package Logica;
  * @author Estudiante
  */
 public class Temperatura extends Sensores {
-    
-    public Temperatura(String marca, String referencia, String fechaInst) {
+    private double temp;
+
+    public Temperatura(double temp, String marca, String referencia, String fechaInst) {
         super(marca, referencia, fechaInst);
+        this.temp = temp;
     }
-    
+
     @Override
     public String listar() {
-      return super.toString();  
+      return  "Temperatura{" + "temp=" + temp + '}'+super.toString();  
     }
 }

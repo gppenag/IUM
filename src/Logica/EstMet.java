@@ -13,14 +13,24 @@ public class EstMet {
     private String nombre;
     private String ubicacion;
     private String fecha;
+    private Sensores[] sensores;
 
-    public EstMet(String nombre, String ubicacion, String fecha) {
+    public EstMet(String nombre, String ubicacion, String fecha, Sensores[] sensores) {
         this.nombre = nombre;
         this.ubicacion = ubicacion;
         this.fecha = fecha;
-        
+        this.sensores = sensores;
     }
 
+
+
+    public Sensores[] getSensores() {
+        return sensores;
+    }
+
+    public void setSensores(Sensores[] sensores) {
+        this.sensores = sensores;
+    }
 
     public String getNombre() {
         return nombre;
